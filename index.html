@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Niederrhein City – Krefeld & Moers</title>
+<link rel="stylesheet" href="style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script></head><body>
+<canvas id="c"></canvas><div id="vig"></div>
+<div id="hud">
+ <canvas id="mm" width="220" height="220"></canvas>
+ <div id="tl"><span id="dist"></span><span id="lm"></span><span id="clock"></span></div>
+ <div id="tr"><div id="money"></div><div id="stars"></div><div id="hpw"><i id="hpb"></i></div><div id="wpn"></div><div id="spd"></div></div>
+ <div id="mis"></div><div id="toast"></div><div id="bust"><i></i></div><div id="ver"></div>
+</div>
+<div id="touch">
+ <div id="zone"></div><div id="sbase"><i id="sknob"></i></div>
+ <button class="tb" id="bF">🔫</button><button class="tb" id="bE">🚪</button><button class="tb" id="bS">⚡</button><button class="tb" id="bW">🔄</button>
+ <div id="tsm"><button class="tb" id="bM">🗺</button><button class="tb" id="bR">📻</button><button class="tb" id="bP">⏸</button></div>
+</div>
+<div id="title" class="ov">
+ <h1>NIEDERRHEIN CITY</h1><p>KREFELD · MOERS · RHEIN</p>
+ <div style="margin-top:10px"><button class="bt" id="bStart">▶ Weiterspielen</button><button class="bt alt" id="bNew">Neues Spiel</button></div>
+ <div class="help">Open-World-Action in 3D (Third-Person): Autos klauen, Aufträge fahren, die Polizei abschütteln und die bekanntesten Orte von Krefeld und Moers entdecken.<br>📱 Linker Daumen = Joystick · 🔫 Feuer/Hupe · 🚪 Ein-/Aussteigen · ⚡ Sprint/Handbremse · 🔄 Waffe<br>⌨ WASD/Pfeile · Rechte Maustaste/Z/X Kamera drehen · Leertaste Handbremse · E Ein-/Aussteigen · F/Maus Feuer · Shift Sprint · Q Waffe · M Karte · R Radio · Esc Pause</div>
+ <div class="help" id="tver" style="opacity:.6"></div>
+ <div class="help" style="opacity:.55">Fan-Projekt, Karte stark verkleinert und stilisiert. Keine Verbindung zu Rockstar Games.</div>
+</div>
+<div id="pause" class="ov hid"><h2>Pause</h2><button class="bt" id="pResume">Weiter</button><button class="bt alt" id="pNew">Neues Spiel</button>
+ <div class="help">📱 Joystick links · 🔫 Feuer/Hupe · 🚪 Ein-/Aussteigen · ⚡ Sprint/Handbremse · 🔄 Waffe · 🗺 Karte · 📻 Radio<br>⌨ WASD/Pfeile · Leertaste Handbremse · E · F/Maus · Shift · Q · M · R · Esc</div></div>
+<div id="mapov" class="ov hid"><canvas id="mapc"></canvas>
+ <div id="mapbar"><button class="bt alt" id="r_all">Gesamt</button><button class="bt alt" id="r_moers">Moers</button><button class="bt alt" id="r_krefeld">Krefeld</button><button class="bt" id="mapx">✕</button></div><div id="mapinfo"></div></div>
+<div id="flash" class="ov flash hid"></div>
+<script src="js/data.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/render3d.js"></script>
+<script src="js/story.js"></script>
+</body></html>
